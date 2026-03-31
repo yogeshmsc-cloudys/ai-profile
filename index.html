@@ -609,7 +609,6 @@
       <button class="lightbox-nav prev" id="lightboxPrev" onclick="navigateLightbox(-1)" style="display:none;"><span class="material-icons">chevron_left</span></button>
       <img id="lightboxImage" class="lightbox-image" src="" alt="Architecture Diagram" />
       <button class="lightbox-nav next" id="lightboxNext" onclick="navigateLightbox(1)" style="display:none;"><span class="material-icons">chevron_right</span></button>
-      <button class="lightbox-download" onclick="downloadCurrentDiagram()"><span class="material-icons">download</span>Download Diagram</button>
     </div>
   </div>
 
@@ -623,9 +622,9 @@
         description: "Multiple AI assistants work together behind the scenes to help users manage DevOps tasks smoothly.",
         items: [
           {
-            id: 'teleconnect-ai',
+            id: 'devops-ai',
             name: 'Github & Jira Agents Workflow',
-            icon: 'phone_in_talk',
+            icon: 'auto_fix_high',
             category: 'DevOps',
             githubUrl: 'https://github.com/yogeshmsc-cloudys',
             demoVideo: 'https://drive.google.com/file/d/1u-u5SIbZ4_nooqE8W7NfLp74CANzoy2Z/preview',
@@ -650,7 +649,44 @@
             ]
           }
         ]
-      }
+      },
+      {
+          "id": "rag-agentic-app",
+          "name": "RAG Intelligence",
+          "icon": "auto_awesome",
+          "description": "An AI assistant that helps users interact with documents using natural language, providing quick answers from PDFs, PPTs, and text files.",
+          "items": [
+            {
+              "id": "rag-chat-app",
+              "name": "Knowledge Based Chatbot",
+              "icon": "chat",
+              "category": "AI Document Intelligence",
+              "githubUrl": "https://github.com/yogeshmsc-cloudys",
+              "demoVideo": "https://drive.google.com/file/d/1CvtQJ2cjNmRdvLwb1qrm5rmJhcBgwJWx/preview",
+              "appUrl": "#",
+              "architectureDiagrams": [
+                'https://raw.githubusercontent.com/yogeshmsc-cloudys/assets/dev/RAG_Chat_App_Architecture.png',
+                'https://raw.githubusercontent.com/yogeshmsc-cloudys/assets/dev/RAG_Chat_App_Flow_Diagram.png'
+              ],
+              "useCase": "Users often struggle to search through large documents manually. They need an easy conversational interface that instantly answers questions based on the content of their files.",
+              "solution": "A chat-based AI system that reads documents uploaded to the platform, understands their content, and allows users to ask questions naturally, receiving clear and relevant answers.",
+              "solutionOverview": [
+                "Automatically loads and organizes documents for easy search.",
+                "Allows users to chat naturally and ask questions about their files.",
+                "Provides accurate answers by understanding the content of PDFs, PPTs, and text files.",
+                "Maintains conversation history so follow-up questions feel natural."
+              ],
+              "features": [
+                "Ask questions about documents in plain language",
+                "Supports PDFs, PowerPoints, and text files",
+                "Smart document search and summarization",
+                "Conversation history for each user session",
+                "API that can integrate with any UI framework",
+                "Fast and easy-to-use chat experience"
+              ]
+            }
+          ]
+        }      
     ];
 
     // ===== State =====
@@ -917,9 +953,6 @@
                 <div class="grid-item-icon"><span class="material-icons">account_tree</span></div>
                 <h3 class="grid-item-title">Architecture Diagram</h3>
                 <div class="section-header-actions">
-                  <button class="download-diagram-btn" onclick="downloadAllDiagrams('${accelerator.id}', '${accelerator.name}')">
-                    <span class="material-icons">download</span>Download
-                  </button>
                 </div>
               </div>
               ${renderArchitectureCarousel(accelerator)}
@@ -1020,7 +1053,6 @@
           <button class="carousel-nav prev" id="carouselPrev" onclick="prevSlide()"><span class="material-icons">chevron_left</span></button>
           <button class="carousel-nav next" id="carouselNext" onclick="nextSlide()"><span class="material-icons">chevron_right</span></button>
           <div class="carousel-counter" id="carouselCounter">1 / ${diagrams.length}</div>
-          <button class="carousel-download-btn" onclick="downloadAllDiagrams('${acc.id}', '${acc.name}')"><span class="material-icons">download</span>Download All</button>
           <div class="carousel-indicators" id="carouselIndicators">${indicators}</div>
         </div>
       `;
