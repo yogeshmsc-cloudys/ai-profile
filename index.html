@@ -510,7 +510,7 @@
 
   <!-- Sidebar Navigation -->
   <aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
+    <div class="sidebar-header" onclick="loadHomePage()" style="cursor:pointer;">
       <span class="material-icons logo">auto_awesome</span>
       <h2>My Marvelous AI Dream</h2>
     </div>
@@ -618,7 +618,7 @@
       {
         id: 'devops-agentic',
         name: 'DevOps Agentic AI Solutions',
-        icon: 'auto_awesome',
+        icon: 'local_police',
         description: "Multiple AI assistants work together behind the scenes to help users manage DevOps tasks smoothly.",
         items: [
           {
@@ -653,7 +653,7 @@
       {
           "id": "rag-agentic-app",
           "name": "RAG Intelligence",
-          "icon": "auto_awesome",
+          "icon": "menu_book",
           "description": "An AI assistant that helps users interact with documents using natural language, providing quick answers from PDFs, PPTs, and text files.",
           "items": [
             {
@@ -686,7 +686,43 @@
               ]
             }
           ]
-        }      
+        },
+        {
+          "id": "qsr-intelligence",
+          "name": "QSR Intelligence",
+          "icon": "restaurant",
+          "description": "An intelligent system that helps restaurants manage operations and engage customers through automated insights and promotions.",
+          "items": [
+            {
+              "id": "restro-intelligence",
+              "name": "Restro Intelligence",
+              "icon": "restaurant_menu",
+              "category": "QSR Intelligence",
+              "githubUrl": "https://github.com/yogeshmsc-cloudys",
+              "demoVideo": "https://drive.google.com/file/d/1CvtQJ2cjNmRdvLwb1qrm5rmJhcBgwJWx/preview",
+              "appUrl": "#",
+              "architectureDiagrams": [
+                'https://raw.githubusercontent.com/yogeshmsc-cloudys/assets/dev/Restro_Intelligence_Architecture.png'
+              ],
+              "useCase": "This solution addresses restaurant operations by automating inventory management, order analysis, and menu promotion to reduce waste and improve efficiency. It enables quick service restaurants (QSRs) to monitor pending orders, expiring stock, and customer interactions for better decision-making.",
+              "solution": "An intelligent system that helps restaurants manage operations and engage customers through automated insights and promotions.",
+              "solutionOverview": [
+                "Streamlines restaurant workflows by analyzing orders and inventory in real-time.",
+                "Promotes menu items based on demand and stock levels to minimize waste.",
+                "Centralized dashboard for tracking key metrics like orders and promotions.",
+                "Enhances customer experience with interactive chat features for queries and feedback.",
+                "Supports operational reporting to help managers optimize performance and profitability."
+              ],
+              "features": [
+                "Automated menu promotion to highlight items during high demand or expiring stock.",
+                "Real-time monitoring of pending orders and inventory levels.",
+                "Interactive chat interface for customer inquiries and order assistance.",
+                "Comprehensive dashboard for viewing and managing menu, inventory, and promotions.",
+                "Intelligent reporting on throughput, waste, and operational insights."
+              ]
+            }
+          ]
+        }
     ];
 
     // ===== State =====
