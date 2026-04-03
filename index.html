@@ -110,9 +110,10 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    .header-title { font-family: 'Google Sans', sans-serif; font-size: 40px; color: var(--gemini-blue); font-weight: 500; }
+    .header-title { font-family: 'Google Sans', sans-serif; font-size: 30px; color: var(--gemini-blue); font-weight: 500; }
     .header-title-2 { font-family: 'Google Sans', sans-serif; font-size: 35px; color: var(--gemini-blue); font-weight: 500; }
-    .header-title-3 { font-family: 'Google Sans', sans-serif; font-size: 30px; color: var(--gemini-blue); font-weight: 500; }
+    .header-title-3 { font-family: 'Google Sans', sans-serif; font-size: 20px; color: var(--gemini-blue); font-weight: 500; }
+    .header-title-black { font-family: 'Google Sans', sans-serif; font-size: 22px; font-weight: 500; }
     .header-title-contact { font-family: 'Google Sans', sans-serif; font-size: 10px; color: var(--gemini-blue); font-weight: 100; }
     .p-body-1 { font-family: 'Google Sans', sans-serif; font-size: 15px; color: var(--gemini-blue); font-weight: 500; }
     .header-actions { display: flex; gap: 12px; }
@@ -722,7 +723,43 @@
               ]
             }
           ]
-        }
+        },
+{
+          "id": "code-migration",
+          "name": "Code Conversion",
+          "icon": "code",
+          "description": "An intelligent system that streamlines project modernization by automatically transforming legacy code into an updated, ready-to-use solution.",
+          "items": [
+            {
+              "id": "plsql-python-migrator",
+              "name": "PLSQL→Python Code Migrator",
+              "icon": "data_exploration",
+              "category": "Code Conversion",
+              "githubUrl": "https://github.com/yogeshmsc-cloudys",
+              "demoVideo": "https://drive.google.com/file/d/1Ga9EhbnphAFbUkGHug5Tt0Ai9hobEi4t/preview",
+              "appUrl": "#",
+              "architectureDiagrams": [
+                'https://raw.githubusercontent.com/yogeshmsc-cloudys/assets/dev/PLSQL_Python_Migrator_Architecture.png'
+              ],
+              "useCase": "A company has an existing application written in PLSQL and wants to modernize it using Python. Instead of manually rewriting everything, they upload the repository link, and the system automatically analyzes the PLSQL code, creates a migration plan, converts the code to Python, and delivers the updated project in a new repository. This saves time, reduces errors, and speeds up modernization.",
+              "solution": "An AI-driven automated workflow that converts PLSQL repositories into clean, production-ready Python code.",
+              "solutionOverview": [
+                "Simplifies project modernization by automatically analyzing legacy codebases.",
+                "Converts older logic into a modern format to improve maintainability and scalability.",
+                "Provides a unified workspace where users can track progress and outputs effortlessly.",
+                "Reduces manual effort through intelligent automation across each step of the process.",
+                "Delivers a fully updated project that's ready for immediate use and further development."
+              ],
+              "features": [
+                "<b>Automated Repository Handling:</b> Clones and manages source and target repositories without manual steps.",
+                "<b>AI-Generated Migration Plan:</b> Produces clear guidelines and conversion rules tailored to the input codebase.",
+                "<b>LLM-Powered Code Conversion:</b> Transforms PLSQL logic into Python using advanced language models.",
+                "<b>End-to-End Orchestration:</b> Coordinates multiple agents to ensure smooth and reliable workflow execution.",
+                "<b>Seamless Output Delivery:</b> Creates and publishes the converted Python project into a new GitHub repository."
+              ]
+            }
+          ]
+        }        
     ];
 
     // ===== State =====
@@ -829,10 +866,10 @@
       const contentArea = document.getElementById('contentArea');
       contentArea.innerHTML = `
         <div class="home-hero">
-          <h1>My Agentic AI Work Profile</h1>
-          <h2 class="header-title-3">Agentic AI Architect</h2>
+          <h2 class="header-title-black">My Agentic AI Work Profile</h2>
+          <h2 class="header-title-3">GCP Agentic AI Architect</h2>
           <p class="subtitle"></p>
-          <p class="subtitle">With over two decades of experience in the IT industry and more than 8 years specializing in cloud-native and AI-driven architectures on <b class="p-body-1">Google Cloud</b>, I have built a strong reputation as a practitioner and architect in Agentic AI systems. My work spans large‑scale transformations, enterprise migrations, and intelligent automation initiatives where I design, orchestrate and deploy end-to-end AI workflows. I combine deep technical expertise with hands-on engineering to create scalable solutions powered by frameworks such as <b class="p-body-1">LangChain, LangGraph, Google ADK, A2A, and MCP.</b></p>
+          <p class="subtitle">With over two decades of experience in the IT industry and more than 8 years specializing in cloud-native and AI-driven architectures on <b class="p-body-1">Google Cloud</b>, I have built a strong reputation as a practitioner and architect in Agentic AI systems. My work spans large-scale transformations, enterprise migrations, and intelligent automation initiatives where I design, orchestrate and deploy end-to-end AI workflows. I combine deep technical expertise with hands-on engineering to create scalable solutions powered by frameworks such as <b class="p-body-1">LangChain, LangGraph, Google ADK, A2A, and MCP.</b></p>
           <p class="subtitle">As an Agentic AI professional, I focus on building autonomous and semi-autonomous systems that deliver real business outcomes. I have designed and delivered AI agents for <b class="p-body-1">DevOps automation, intelligent code migration, database assistance, and cross-cloud modernization, using LLM orchestration and advanced reasoning capabilities</b>. My engagements include architecting RAG-based GenAI platforms, implementing event-driven microservices, and delivering multi-agent workflows that enhance productivity for retail, financial services, and technology teams across Europe and the Nordics. These solutions integrate seamlessly with GCP services such as Dataflow, BigQuery, Cloud Run, Firestore, and Pub/Sub, enabling reliable, production-grade AI operations.</p>
           <p class="subtitle">With a strong foundation of 10x Google Cloud certifications, hands-on architectural expertise, and a passion for advanced LLM-driven automation, I am committed to shaping the next generation of Agentic AI systems that empower organizations to operate smarter, faster, and more autonomously.</p>
 
@@ -1002,7 +1039,7 @@
                 <div class="grid-item-icon">
                   <span class="material-icons">play_circle</span>
                 </div>
-                <h3 class="grid-item-title">Demonstration</h3>
+                <h3 class="grid-item-title">Demo</h3>
               </div>
 
               <!-- Dismissible Banner -->
