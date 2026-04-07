@@ -795,6 +795,78 @@
               ]
             }
           ]
+        },
+        {
+          "id": "infra-automation",
+          "name": "Infrastructure Automation",
+          "icon": "device_hub",
+          "description": "Intelligent cloud infrastructure automation that generates, plans, and deploys your infrastructure with human oversight and AI precision.",
+          "items": [
+            {
+              "id": "terraform-automation",
+              "name": "Terraform Automation Agents",
+              "icon": "account_tree",
+              "category": "Infrastructure Automation",
+              "githubUrl": "https://github.com/yogeshmsc-cloudys",
+              "demoVideo": "",
+              "appUrl": "#",
+              "architectureDiagrams": [
+                'https://raw.githubusercontent.com/yogeshmsc-cloudys/assets/dev/Terraform_Automation_Workflow.png'
+              ],
+              "useCase": "Organizations need to quickly provision and manage complex cloud infrastructure while maintaining security and cost control. This workflow enables teams to describe their infrastructure intent in plain language and automatically generates, reviews, and deploys production-ready infrastructure without manual coding.",
+              "solution": "A multi-agent AI system that intelligently generates infrastructure code, validates it, and orchestrates safe deployment with approval workflows.",
+              "solutionOverview": [
+                "<b>Intelligent Code Generation:</b> AI agents understand your infrastructure requirements and automatically generate production-ready Terraform configurations",
+                "<b>Multi-Agent Orchestration:</b> Specialized agents collaborate seamlessly-one generates code, another handles deployment-ensuring separation of concerns and quality gates",
+                "<b>Plan-Review-Apply Workflow:</b> Generates infrastructure plans for human review before any deployment, maintaining governance and preventing unwanted changes",
+                "<b>Cloud-Native Integration:</b> Leverages GCS for artifact management and Cloud Build for secure infrastructure execution in your GCP environment",
+                "<b>Approval-Driven Deployment:</b> Built-in human approval gates ensure infrastructure changes are reviewed and authorized before applying to production"
+              ],
+              "features": [
+                "<b>Natural Language to Infrastructure:</b> Convert simple descriptions into complete, validated Terraform configurations",
+                "<b>Automated File Organization:</b> Intelligently structures generated code with proper backend, variable, and resource separation",
+                "<b>Real-Time Plan Summaries:</b> Provides clear, human-readable summaries of what will change before deployment",
+                "<b>Artifact Versioning & Storage:</b> Automatically versions and stores infrastructure code in cloud storage for audit trails and rollback capability",
+                "<b>Approval-Based Deployment Gating:</b> Prevents automatic infrastructure changes; team members must explicitly approve plans before execution"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "db-agentic-workflow",
+          "name": "AI Assistants for Database",
+          "icon": "storage",
+          "description": "Intelligent assistants that makes database interactions conversational and effortless.",
+          "items": [
+            {
+              "id": "query-wise",
+              "name": "Querywise",
+              "icon": "smart_toy",
+              "category": "AI Assistants for Database",
+              "githubUrl": "https://github.com/yogeshmsc-cloudys",
+              "demoVideo": "",
+              "appUrl": "#",
+              "architectureDiagrams": [
+                'https://raw.githubusercontent.com/yogeshmsc-cloudys/assets/dev/DB_Assistant_Workflow.png'
+              ],
+              "useCase": "A user needs to explore and analyze data from a company database without writing complex queries. They ask questions in natural language, and the assistant understands their intent, retrieves relevant information, and provides clear, actionable insights. This helps non-technical users make data-driven decisions quickly and accurately.",
+              "solution": "An AI-powered conversational interface that transforms natural language questions into database queries and delivers human-readable answers.",
+              "solutionOverview": [
+                "Makes database exploration accessible to everyone by accepting plain English questions.",
+                "Automatically understands user intent and selects the right data sources for accurate responses.",
+                "Ensures safe and secure interactions by allowing only read-only operations on the database.",
+                "Provides clear, formatted answers that explain the data in simple terms.",
+                "Handles complex queries involving multiple tables through intelligent query planning."
+              ],
+              "features": [
+                "<b>Intent Classification:</b> Automatically detects whether users want table lists, column details, data queries, or general chat.",
+                "<b>Smart SQL Generation:</b> Creates precise database queries based on user questions using advanced AI reasoning.",
+                "<b>Query Validation:</b> Ensures all generated queries are safe and read-only before execution.",
+                "<b>Result Formatting:</b> Transforms raw database results into easy-to-understand natural language summaries.",
+                "<b>Session Management:</b> Maintains conversation history for contextual follow-up questions."
+              ]
+            }
+          ]
         }        
     ];
 
